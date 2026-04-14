@@ -1,0 +1,18 @@
+# Kimlik ve Oturum Dosyaları
+auth.json
+chrome_profil/
+
+# Veri ve Medya
+resimler/
+ilanlar.xlsx
+listing_data.xlsx
+
+# Python Çevre Dosyaları
+__pycache__/
+*.pyc
+venv/
+.env
+
+# IDE Ayarları
+.vscode/
+.idea/
