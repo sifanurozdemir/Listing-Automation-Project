@@ -42,7 +42,7 @@ Projenin hedef platformdaki oturumu yönetebilmesi için Chrome'un belirtilen po
 
 ### 3. Oturum Yönetimi (Session Persistence)
 
-Hedef platformda manuel giriş yaptıktan sonra, oturum verilerini (cookies, storage) mühürlemek için:
+Hedef platformda manuel giriş yaptıktan sonra, oturum verilerini (cookies, storage) mühürlemek için :
 
 ```bash
 python session_manager.py
