@@ -30,11 +30,11 @@ graph TD
     classDef output fill:#fff5f5,stroke:#ef4444,stroke-width:2px,color:#991b1b;
     classDef browser fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px,color:#075985;
 
-    XLS[📄 ilanlar.xlsx<br/><b>İlan Veri Seti</b>]:::source -->|1. Veri Okuma| LE[⚙️ listing_engine.py<br/><b>Otomasyon Motoru</b>]:::script
-    IMG[📂 resimler/<br/><b>Ürün Görselleri</b>]:::source -->|2. Eşleştirme & Yükleme| LE
+    XLS["📄 ilanlar.xlsx<br/>İlan Veri Seti"]:::source -->|1. Veri Okuma| LE["⚙️ listing_engine.py<br/>Otomasyon Motoru"]:::script
+    IMG["📂 resimler/<br/>Ürün Görselleri"]:::source -->|2. Eşleştirme & Yükleme| LE
     
-    CH[🌐 Google Chrome<br/><b>Remote Debug (9222)</b>]:::browser <-->|3. CDP Protokolü| SM(🔑 session_manager.py<br/><b>Oturum Yönetici</b>):::script
-    SM -->|4. Çerezleri Kaydet| AUTH[📄 auth.json<br/><b>Oturum Çerezleri</b>]:::output
+    CH["🌐 Google Chrome<br/>Remote Debug (9222)"]:::browser <-->|3. CDP Protokolü| SM("🔑 session_manager.py<br/>Oturum Yöneticisi"):::script
+    SM -->|4. Çerezleri Kaydet| AUTH["📄 auth.json<br/>Oturum Çerezleri"]:::output
     
     AUTH -->|5. Oturumu Yükle| LE
     LE <-->|6. Formları Doldur & Gönder| CH
